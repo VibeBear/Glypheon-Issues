@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+import LinkCard from '../components/LinkCard.astro';
+---
+
+<Layout title="Glypheon - Your PhotoLibrary Companion">
+	<nav class="fixed top-0 flex w-full p-4">
+		<!-- <img src="./logo.png" class="justify-self-start h-8"> -->
+		<ul role="list" class="grow flex gap-4 justify-end text-white">
+			<li><a href="#intro">Intro</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#help">Help</a></li>
+			<li><a href="#privacy">Privacy</a></li>
+			<li><a href="https://apps.apple.com/de/app/glypheon/id6474363425">Download</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section id="intro" class="snap-always snap-center h-dvh flex justify-center bg-hero bg-cover">
+			<div class="flex flex-col place-items-center justify-center">
+				<h1 class="pb-4 text-white text-3xl font-bold">Glypheon</h1>
+				<p class="pb-4 text-white">Your PhotoLibrary Companion</p>
+				<p class="text-white animate-bounce"><a href="#features"><span class="material-symbols-outlined">keyboard_double_arrow_down</span></a></p>
+			</div>
+		</section>
+
+		<section id="features" class="snap-always snap-center h-dvh container mx-auto p-4 lg:p-0 flex flex-col justify-center">
+			<h2 class="text-white text-3xl font-bold py-4">Features</h2>
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+				<img src="screenshot.jpeg" class="hidden lg:block lg:-ml-96 grayscale hover:grayscale-0 rounded" />
+				<ul role="list" class="grid gap-4 grid-cols-2 lg:-ml-96">
+					<FeatureCard
+						icon="lock"
+						title="Protect your photos"
+						body="Easily watermark with photos of your library or encode QR codes onto your images."
+					/>
+					<FeatureCard
+						icon="tune"
+						title="Customization"
+						body="If needed, tailor each image individually — adjusting placement, scale, opacity, and blend modes."
+					/>
+					<FeatureCard
+						icon="stacks"
+						title="Layers"
+						body="Stack multiple layers of watermarks / QR-codes onto your images."
+					/>
+					<FeatureCard
+						icon="star"
+						title="Presets"
+						body="Save and reuse presets across devices!"
+					/>
+				</ul>
+			</div>
+		</section>
+
+		<section id="help" class="snap-always snap-center h-dvh container mx-auto p-4 lg:p-0 flex flex-col justify-center">
+			<div class="grid gap-4 grid-cols-1 lg:grid-cols-2">
+				<img src="./logo.png" class="h-96 w-96 justify-self-end" />
+				<ul role="list" class="flex flex-col justify-center gap-4">
+					<li class="list-none">
+						<h2 class="text-white text-3xl font-bold py-4">Help</h2>
+					</li>
+					<LinkCard
+						href="https://github.com/VibeBear/Glypheon-Issues/issues"
+						icon="bug_report"
+						title="Report an issue"
+						body="Report any problems, errors, or concerns you have while using Glypheon."
+					/>
+					<LinkCard
+						href="https://github.com/VibeBear/Glypheon-Issues/discussions"
+						icon="forum"
+						title="Get involved"
+						body="Got questions or ideas? Head over to the discussions!"
+					/>
+				</ul>
+			</div>
+		</section>
+
+		<section id="privacy" class="snap-always snap-center h-dvh container mx-auto p-4 lg:p-0 flex flex-col justify-center">
+			<h2 class="text-white text-3xl font-bold py-4">Privacy</h2>
+			<div class="list-none rounded p-4 lg:p-8 bg-gradient-to-r from-slate-100 to-blue-50 flex gap-4">
+				<dl class="uk-description-list p-4 flex-1">
+					<dt class="text-slate-900">No data collected</dt>
+					<dd class="text-slate-500 text-sm pb-4">Glypheon does not collect any data.</dd>
+					<dt class="text-slate-900">Photo Library Access</dt>
+					<dd class="text-slate-500 text-sm pb-4">To save your processed photos directly to your Apple Photos Library, Glypheon requires permission to write data.</dd>
+					<dt class="text-slate-900">Safe & reliable Apple technologies</dt>
+					<dd class="text-slate-500 text-sm pb-4">Your presets are safely stored within your iCloud.</dd>
+				</dl>
+				<img src="./banana.png" class="hidden lg:block h-60 w-60 rounded-full justify-self-end" />
+			</div>
+		</section>
+
+		<section id="thanks" class="snap-always snap-center h-dvh flex flex-col place-items-center justify-center bg-thanks bg-cover">
+			<div class="text-purple-700 lg:text-black grow flex flex-col place-items-center justify-center">
+				<p class="pb-4 animate-bounce"><a href="#intro"><span class="material-symbols-outlined">keyboard_double_arrow_up</span></a></p>
+				<h1 class="text-3xl font-bold">Thank you!</h1>
+				<p class="text-2xl">for using Glypheon</p>
+			</div>
+			<p class="text-purple-700 lg:text-black text-small">by <a href="https://vibebear.studio" target="_blank">VibeBear</a></p>
+		</section>
+	</main>
+</Layout>
+
+<style>
+</style>
