@@ -4,8 +4,8 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'hero': "url('./hero.png')",
-				'thanks': "url('./thanks.jpg')",
+				'hero': "url('hero.png')",
+				'thanks': "url('thanks.jpg')",
 			},
 			blur: {
 				xs: '2px',
