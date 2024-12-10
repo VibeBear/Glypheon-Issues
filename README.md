@@ -3,7 +3,7 @@ Issue repository for Glypheon.
 
 # Glypheon
 
-![Glypheon](https://glypheon.app/img/logo.png)
+![Glypheon](https://glypheon.app/logo.png)
 
 Your PhotoLibrary companion!
 Easily watermark and encode QR codes onto your images.
