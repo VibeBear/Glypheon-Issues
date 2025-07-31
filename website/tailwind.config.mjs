@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'hero': "url('https://glypheon.app/hero.png')",
+				'hero': "url('https://glypheon.app/hero.webp')",
 				'thanks': "url('https://glypheon.app/thanks.jpg')",
 			},
 			blur: {
